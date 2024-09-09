@@ -14,8 +14,12 @@ contenedor docker del ubuntu de la EPS
     ```bash
     docker exec -it <name> /bin/bash
     ```
--  parar/encender contenedor:
+    - una vez dentro del contenedor se puede instalar paquetes sin contraseña:
+    ```bash
+    sudo apt install <package>
+    ```
+- parar/encender contenedor:
     ```bash
     docker stop <name>
     docker start <name>
-    ```
+    ```    
